@@ -24,7 +24,7 @@ const DEFAULT_FILTERS: FilterState = {
   stockFilter: 'all',
 };
 
-export const useInventoryStore = create<InventoryStore>((set, get) => ({
+export const useInventoryStore = create<InventoryStore>((set) => ({
   filters: DEFAULT_FILTERS,
   sort: { field: 'created_at', order: 'desc' },
   page: 1,
